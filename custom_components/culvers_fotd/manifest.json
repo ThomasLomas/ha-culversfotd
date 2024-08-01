@@ -1,0 +1,12 @@
+{
+  "domain": "culvers_fotd",
+  "name": "Culver's FOTD",
+  "codeowners": [
+    "@ludeeus"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/ThomasLomas/ha-culversfotd",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/ThomasLomas/ha-culversfotd/issues",
+  "version": "0.0.0"
+}

@@ -1,10 +1,6 @@
-# Culver's FOTD
+# Culver's Flavor of the Day for Home Assistant
 
-[![GitHub Release][releases-shield]][releases]
-[![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE)
-
-_Integration to integrate with [culvers_fotd][culvers_fotd]._
+Absolutely no connection to Culver's. Not official whatsoever. No warranty provided on accurancy. I'm just someone who spends too much money on their concerete mixers.
 
 **This integration will set up the following platforms.**
 
@@ -24,18 +20,8 @@ Platform | Description
 
 ## Configuration is done in the UI
 
-<!---->
+Set the restaurant slug as per the instructions.
 
 ## Contributions are welcome!
 
 If you want to contribute to this please read the [Contribution guidelines](CONTRIBUTING.md)
-
-***
-
-[culvers_fotd]: https://github.com/ThomasLomas/ha-culversfotd
-[commits-shield]: https://img.shields.io/github/commit-activity/y/ThomasLomas/ha-culversfotd.svg?style=for-the-badge
-[commits]: https://github.com/ThomasLomas/ha-culversfotd/commits/main
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
-[license-shield]: https://img.shields.io/github/license/ThomasLomas/ha-culversfotd.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/ThomasLomas/ha-culversfotd.svg?style=for-the-badge
-[releases]: https://github.com/ThomasLomas/ha-culversfotd/releases

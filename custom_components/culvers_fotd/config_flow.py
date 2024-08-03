@@ -28,9 +28,7 @@ class CulversFotdFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         _errors = {}
         if user_input is not None:
             try:
-                await self._test_lookup(
-                    restaurant=user_input["restaurant"]
-                )
+                await self._test_lookup(restaurant=user_input["restaurant"])
             except CulversFotdClientCommunicationError as exception:
                 LOGGER.error(exception)
                 _errors["base"] = "connection"

@@ -19,6 +19,9 @@ class CulversFotdEntity(CoordinatorEntity[CulversFotdDataUpdateCoordinator]):
         super().__init__(coordinator)
         self._attr_unique_id = coordinator.config_entry.entry_id
         self._attr_device_info = DeviceInfo(
+            name=coordinator.data.restaurant_name,
+            model=coordinator.config_entry.data["restaurant"],
+            configuration_url=f"https://www.culvers.com/restaurants/{coordinator.config_entry.data['restaurant']}",
             identifiers={
                 (
                     coordinator.config_entry.domain,

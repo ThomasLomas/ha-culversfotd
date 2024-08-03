@@ -9,7 +9,7 @@ if TYPE_CHECKING:
     from homeassistant.config_entries import ConfigEntry
     from homeassistant.loader import Integration
 
-    from .api import CulversFotdApiClient
+    from .client import CulversFotdClient
     from .coordinator import CulversFotdDataUpdateCoordinator
 
 
@@ -20,6 +20,6 @@ type CulversFotdConfigEntry = ConfigEntry[CulversFotdData]
 class CulversFotdData:
     """Data for the CulversFotd integration."""
 
-    client: CulversFotdApiClient
+    client: CulversFotdClient
     coordinator: CulversFotdDataUpdateCoordinator
     integration: Integration

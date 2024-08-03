@@ -2,15 +2,14 @@
     "config": {
         "step": {
             "user": {
-                "description": "If you need help with the configuration have a look here: https://github.com/ThomasLomas/ha-culversfotd",
+                "description": "Find the the restaurant slug by going to the restaurant's website and looking at the URL. For example, the URL for the restaurant 'Culver's of Fort Mill, SC - Foothills Way' is 'https://www.culvers.com/restaurants/fort-mill-sc'. The restaurant slug is 'fort-mill-sc'.",
                 "data": {
-                    "username": "Username",
-                    "password": "Password"
+                    "restaurant": "Restaurant Slug"
                 }
             }
         },
         "error": {
-            "auth": "Username/Password is wrong.",
+            "auth": "Restaurant slug is wrong.",
             "connection": "Unable to connect to the server.",
             "unknown": "Unknown error occurred."
         }

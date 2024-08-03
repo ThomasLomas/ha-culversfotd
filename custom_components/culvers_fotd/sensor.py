@@ -18,7 +18,7 @@ if TYPE_CHECKING:
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
         key="culvers_fotd",
-        name="Integration Sensor",
+        name="Today's Flavor of the Day",
         icon="mdi:format-quote-close",
     ),
 )
@@ -54,4 +54,4 @@ class CulversFotdSensor(CulversFotdEntity, SensorEntity):
     @property
     def native_value(self) -> str | None:
         """Return the native value of the sensor."""
-        return self.coordinator.data.get("body")
+        return self.coordinator.data.flavor_of_the_day

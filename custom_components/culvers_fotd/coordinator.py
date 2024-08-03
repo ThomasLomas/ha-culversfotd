@@ -5,12 +5,12 @@ from __future__ import annotations
 from datetime import timedelta
 from typing import TYPE_CHECKING, Any
 
-from homeassistant.exceptions import ConfigEntryAuthFailed
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
-from .api import (
-    CulversFotdApiClientAuthenticationError,
-    CulversFotdApiClientError,
+from custom_components.culvers_fotd.model import RestaurantResponse
+
+from .client import (
+    CulversFotdClientError,
 )
 from .const import DOMAIN, LOGGER
 
@@ -20,11 +20,12 @@ if TYPE_CHECKING:
     from .data import CulversFotdConfigEntry
 
 
-# https://developers.home-assistant.io/docs/integration_fetching_data#coordinated-single-api-poll-for-data-for-all-entities
 class CulversFotdDataUpdateCoordinator(DataUpdateCoordinator):
-    """Class to manage fetching data from the API."""
+    """Class to manage fetching data from the client."""
 
     config_entry: CulversFotdConfigEntry
+
+    data: RestaurantResponse
 
     def __init__(
         self,
@@ -42,7 +43,5 @@ class CulversFotdDataUpdateCoordinator(DataUpdateCoordinator):
         """Update data via library."""
         try:
             return await self.config_entry.runtime_data.client.async_get_data()
-        except CulversFotdApiClientAuthenticationError as exception:
-            raise ConfigEntryAuthFailed(exception) from exception
-        except CulversFotdApiClientError as exception:
+        except CulversFotdClientError as exception:
             raise UpdateFailed(exception) from exception

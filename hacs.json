@@ -1,6 +1,6 @@
 {
     "name": "Culver's FOTD",
     "hide_default_branch": true,
-    "homeassistant": "2024.6.0",
+    "homeassistant": "2024.7.0",
     "render_readme": true
 }

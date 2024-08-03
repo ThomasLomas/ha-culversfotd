@@ -4,17 +4,13 @@
 [![GitHub Activity][commits-shield]][commits]
 [![License][license-shield]](LICENSE)
 
-![Project Maintenance][maintenance-shield]
-
 _Integration to integrate with [culvers_fotd][culvers_fotd]._
 
 **This integration will set up the following platforms.**
 
 Platform | Description
 -- | --
-`binary_sensor` | Show something `True` or `False`.
-`sensor` | Show info from CulversFotd API.
-`switch` | Switch something `True` or `False`.
+`sensor` | Show the current flavor of the day
 
 ## Installation
 
@@ -41,6 +37,5 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 [commits]: https://github.com/ThomasLomas/ha-culversfotd/commits/main
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [license-shield]: https://img.shields.io/github/license/ThomasLomas/ha-culversfotd.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Joakim%20Sørensen%20%40ludeeus-blue.svg?style=for-the-badge
 [releases-shield]: https://img.shields.io/github/release/ThomasLomas/ha-culversfotd.svg?style=for-the-badge
 [releases]: https://github.com/ThomasLomas/ha-culversfotd/releases

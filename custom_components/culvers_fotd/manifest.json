@@ -2,7 +2,7 @@
   "domain": "culvers_fotd",
   "name": "Culver's FOTD",
   "codeowners": [
-    "@ludeeus"
+    "@ThomasLomas"
   ],
   "config_flow": true,
   "documentation": "https://github.com/ThomasLomas/ha-culversfotd",

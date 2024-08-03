@@ -7,8 +7,6 @@ from typing import TYPE_CHECKING, Any
 
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
-from custom_components.culvers_fotd.model import RestaurantResponse
-
 from .client import (
     CulversFotdClientError,
 )
@@ -16,6 +14,8 @@ from .const import DOMAIN, LOGGER
 
 if TYPE_CHECKING:
     from homeassistant.core import HomeAssistant
+
+    from custom_components.culvers_fotd.model import RestaurantResponse
 
     from .data import CulversFotdConfigEntry
 

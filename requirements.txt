@@ -1,5 +1,5 @@
-colorlog==6.8.2
-homeassistant==2024.6.0
-pip>=21.3.1
-ruff==0.7.1
+colorlog==6.9.0
+homeassistant==2024.12.5
+pip>=21.0,<25.2
+ruff==0.12.5
 beautifulsoup4==4.12.3

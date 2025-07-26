@@ -63,8 +63,8 @@ class CulversFotdClient:
                 ]["restaurantDetails"]
 
                 return RestaurantResponse(
-                    restaurant_details["title"],
-                    restaurant_details["flavorOfTheDay"][0]["title"],
+                    restaurant_details["name"],
+                    restaurant_details["flavors"][0]["name"],
                 )
 
         msg = "Invalid data received from the website."

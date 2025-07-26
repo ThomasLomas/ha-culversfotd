@@ -8,5 +8,5 @@
   "documentation": "https://github.com/ThomasLomas/ha-culversfotd",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/ThomasLomas/ha-culversfotd/issues",
-  "version": "0.0.0"
+  "version": "1.1.0"
 }

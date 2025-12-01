@@ -2,4 +2,4 @@ colorlog==6.10.1
 homeassistant==2024.12.5
 pip>=21.0,<25.4
 ruff==0.14.7
-beautifulsoup4==4.14.2
+beautifulsoup4==4.14.3
